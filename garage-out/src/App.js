@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
 import Navibar from './components/Navibar';
-import Login from './components/pages/Login';
+import ProfileView from './components/pages/ProfileView';
 
 function App() {
   return (
@@ -17,17 +17,7 @@ function App() {
             </Routes>
           </Router>
 
-
-          <a 
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn react
-            </a>
-
-            <Login/>
+            <ProfileView/>
      </div>
   );
 }

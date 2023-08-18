@@ -1,0 +1,96 @@
+.login__background::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('../assets/garagesale.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: contrast(100%) brightness(80%) sepia(30%) blur(2px);
+    z-index:-1;
+  }
+
+.login__container {
+    position: relative;
+    transform: translate(0%,25vh);
+	display: flex;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: 25vh;
+    width: 30rem;
+    margin: auto;
+    background:rgba(28, 27, 27, .92);
+    border-radius: 20px;
+}
+
+.login__wrapper {
+    width:80%;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login__field-link{
+	color: #ffffff !important;
+}
+
+.login__field-link:hover{
+	color: #6A679E !important;
+}
+
+.login__field-btn{
+    padding: 8px;
+    border:none;
+    border-radius: 10px;
+	background-color: #6A679E;
+    width: 6rem;
+    height: 3rem;
+    color:#ffffff;
+}
+
+.login__field-btn:hover{
+    animation-name: opaque;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opaque {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.8;
+    }
+  }
+
+.login__icon {
+    outline: none;
+	position: absolute;
+	top: 30px;
+	color: #ffffff;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #ffffff;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+    color:#ffffff;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}

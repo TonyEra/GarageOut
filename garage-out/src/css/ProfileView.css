@@ -1,0 +1,23 @@
+.profile__background {
+    position: absolute;
+    background-color: white;
+}
+
+.profileview__container {
+    position: relative;
+    transform: translate(0%,25vh);
+	display: flex;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+    margin: auto;
+    width:50%;
+    height:auto;
+    background:rgba(28, 27, 27, .92);
+    border-radius: 20px;
+}
+
+.profileview__field {
+    position: relative;		
+    text-decoration-color:#ffffff;
+}
