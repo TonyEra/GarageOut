@@ -1,14 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
-import Nav from './components/Nav';
+import Navibar from './components/Navibar';
+import Login from './components/pages/Login';
 
 function App() {
   return (
      <div className="App">
-        <header className="App-header">
           <Header />
-          <Nav/>
+
+          <Router>
+          <Navibar/>
+            <Routes>
+              <Route exact path="/" element={<Header />} />
+            </Routes>
+          </Router>
+
+
           <a 
             className="App-link"
             href="https://reactjs.org"
@@ -17,7 +26,8 @@ function App() {
           >
             Learn react
             </a>
-        </header>
+
+            <Login/>
      </div>
   );
 }
